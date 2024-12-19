@@ -1,5 +1,5 @@
+import markerImage from "../images/marker.png"
 export default function Entry(props) {
-    console.log(props);
     return (
         <article className="journal-entry">
             <div className="main-image-container">
@@ -12,7 +12,7 @@ export default function Entry(props) {
             <div className="info-container">
                 <img 
                     className="marker"
-                    src="../images/marker.png" 
+                    src={markerImage}
                     alt="map marker icon"
                 />
                 <span className="country">{props.country}</span>
